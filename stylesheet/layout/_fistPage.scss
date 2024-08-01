@@ -1,0 +1,400 @@
+@import url("https://fonts.googleapis.com/css2?family=Klee+One&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Noto+Serif+TC&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Sedan:ital@0;1&family=Zen+Old+Mincho&display=swap");
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: #ede9e3;
+}
+
+.bigArea {
+  width: 100%;
+}
+
+.top {
+  width: 100%;
+  height: 5dvh;
+  background-color: #e7d7c9;
+  display: flex;
+}
+
+.title {
+  height: 20dvh;
+  border: 0px solid black;
+  display: flex;
+  position: absolute;
+  top: 0;
+  position: fixed;
+  z-index: 99;
+  background-color: #ede9e3;
+}
+.name {
+  width: 20%;
+  height: 80%;
+  border: 0px solid red;
+  margin-top: 10px;
+  position: relative;
+  .chinese {
+    position: absolute;
+    top: 44px;
+    left: 62px;
+    width: 70%;
+    height: 10%;
+    font-size: 34px;
+    font-family: "Noto Serif TC", serif;
+    color: #80726b;
+  }
+  .engb {
+    position: absolute;
+    top: -6px;
+    left: 44px;
+    width: 10%;
+    height: 10%;
+    font-size: 83px;
+    font-family: "PT Serif", serif;
+    color: #a2999461;
+  }
+  .english {
+    position: absolute;
+    top: 24px;
+    left: 94px;
+    width: 7%;
+    letter-spacing: 1em;
+    line-height: 1;
+    font-size: 16px;
+    font-family: "PT Serif", serif;
+    color: rgb(162 153 148 / 70%);
+  }
+}
+.guide {
+  width: 60%;
+  height: 50%;
+  border: 0px solid black;
+  margin-left: 253px;
+  margin-top: 41px;
+  display: flex;
+  overflow: hidden; // 先隱藏效果
+}
+// === 中文轉英文 ===
+.guide .usualtext:hover {
+  padding-top: 50px;
+}
+.guide .hovertext {
+  margin-top: -93px;
+}
+.usualtext {
+  font-family: "PT Serif", serif;
+  font-size: 28px;
+}
+.hovertext {
+  font-family: "Noto Serif TC", serif;
+}
+// =============
+.line {
+  width: 0px;
+  height: 67px;
+  margin-left: 33px;
+  margin-right: 33px;
+  border-right: 4px dotted black;
+}
+
+.photo {
+  width: 100%;
+  height: 71dvh;
+  border: 0px solid black;
+  margin: 0 auto;
+  margin-top: 41px;
+}
+
+//=== 輪播 ===
+.carousel-inner img {
+  display: block;
+  width: 90%;
+  height: 89dvh;
+}
+// ===========
+.news {
+  width: 59%;
+  height: 15dvh;
+  background-color: #d4b2a7;
+  top:95%;
+  left: 20%;
+  font-family: "Noto Serif TC", serif;
+  display: flex;
+}
+.leftsqu {
+  width: 20%;
+  height: 100%;
+  background: #3a2d28;
+  color: white;
+  text-align: center;
+  padding-top: 4%;
+  font-size: 128%;
+  font-family: "Noto Serif TC", serif;
+}
+.rightsqu {
+  font-size: 141%;
+  text-align: center;
+  padding-top: 4%;
+  width: 80%;
+}
+.conceptIntro {
+  width: 100%;
+  height: 62dvh;
+  border: 0px solid black;
+  margin: 0 auto;
+  margin-top: 109px;
+  display: flex;
+}
+.squ {
+  width: 28%;
+  height: 90dvh;
+  background-color: rgba(212, 178, 167, 0.4901960784);
+  position: relative;
+  margin-top: -2%;
+  margin-left: 0%;
+  z-index: -1;
+}
+.conPho {
+  width: 72%;
+  height: 100%;
+  position: absolute;
+  top: 76px;
+  right: -75px;
+  background-image: url(stylesheet/layout/6e3604a0cf4c6ff41ef84936fe00c539.jpg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  z-index: 20;
+}
+.conText {
+  position: absolute;
+  left: 72%;
+  top: 10%;
+  width: 40%;
+  height: 100%;
+  border: 0px solid black;
+  margin-left: -38%;
+  margin-top: 8%;
+  padding-left: 43%;
+  position: relative;
+  #conChi {
+    position: absolute;
+    top: -4%;
+    left: -28%;
+    font-size: 194%;
+    font-family: "Noto Serif TC", serif;
+    color: #a38f85;
+    letter-spacing: 0.5em;
+  }
+  #conEng {
+    position: absolute;
+    top: 10%;
+    left: -23%;
+    font-family: "PT Serif", serif;
+    color: #a38f85;
+  }
+  #conceptContent {
+    position: absolute;
+    top: 35%;
+    left: 1%;
+    font-family: "Noto Serif TC", serif;
+  }
+}
+.lineInCon {
+  position: absolute;
+  top: 10%;
+  left: -21%;
+  width: 20%;
+  height: 10dvh;
+  border-bottom: 2px solid #3a2d28;
+}
+.ranking {
+  width: 100%;
+  height: 85dvh;
+  border: 0px solid black;
+  margin: 0 auto;
+  margin-top: 10%;
+}
+.rankTitle {
+  width: 100%;
+  height: 126%;
+  border: 0px solid black;
+  background-color: #e7d7c9;
+  display: flex;
+  position: relative;
+  #watchmore {
+    position: absolute;
+    bottom: 10px;
+    right: 20px;
+    font-size: 13px;
+    font-family: "PT Serif", serif;
+    text-decoration: none;
+  }
+}
+
+.hotRanking {
+  margin-left: 17%;
+  padding-top: 2%;
+  width: 17%;
+}
+
+#rankChi {
+  font-size: 26px;
+  font-family: "Noto Serif TC", serif;
+  letter-spacing: 0.5em;
+}
+#rankEng {
+  font-family: "PT Serif", serif;
+  margin-left: 36px;
+}
+.rankPhoto {
+  display: flex;
+  height: 107dvh;
+  overflow: hidden;
+}
+
+// 圖片滑動
+.box1 {
+  animation: scroll 15s linear infinite;
+}
+@keyframes scroll {
+  0% {
+    transform: translateX(calc(135px * 7));
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+// ========
+
+.bookSlide,.perSlide {
+  margin-top: 5%;
+  margin-left: 10%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 150px;
+  height: 205px;
+}
+.bookSlide img {
+  width: 100%;
+  margin-left: 80px;
+}
+.perSlide img {
+  width: 127%;
+  height: 90%;
+  margin-left: 80px;
+  border-radius: 50%;
+}
+.box2 {
+  animation: scroll2 15s linear infinite;
+}
+@keyframes scroll2 {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(calc(135px * 7));
+  }
+}
+
+.findus {
+  height: 120dvh;
+  background-color: #e7d7c9;
+  display: flex;
+  margin-top: -5%;
+}
+.whiteSqu {
+  width: 80%;
+  height: 80%;
+  margin: auto auto;
+  background-color: #fffcf9;
+  display: flex;
+}
+.findusText {
+  height: 100%;
+  width: 50%;
+  border: 0px solid black;
+  text-align: center;
+  font-family: "PT Serif", serif;
+  color: #a38f85;
+}
+.findusTitle {
+  margin-top: 5%;
+  font-size: 37px;
+}
+.findusContent {
+  text-align: center;
+}
+.data {
+  font-family: "Noto Serif TC", serif;
+  width: 59%;
+  margin: 0 auto;
+  text-align: left;
+  line-height: 2;
+}
+iframe {
+  margin-top: 25px;
+}
+.middleLine {
+  width: 10px;
+  height: 80%;
+  border-right: 1.5px solid #e7d7c9;
+  margin-top: 55px;
+}
+.findusInput {
+  border: 0px solid black;
+  width: 50%;
+  height: 100%;
+  position: relative;
+  #name {
+    position: absolute;
+    top: 21%;
+    left: 10%;
+    padding-left: 9px;
+  }
+  #number {
+    position: absolute;
+    top: 21%;
+    right: 10%;
+    padding-left: 9px;
+  }
+  #text {
+    position: absolute;
+    bottom: 16%;
+    left: 10%;
+    width: 81%;
+    height: 49%;
+    padding-left: 10px;
+    padding-bottom: 40%;
+  }
+  #test ::placeholder {
+    position: absolute;
+    top: 10%;
+    left: 10%;
+  }
+  #submit {
+    position: absolute;
+    bottom: 7%;
+    right: 39%;
+    width: 19%;
+    border: 0px solid #e7d7c9;
+    background-color: #e7d7c9;
+    font-family: "PT Serif", serif;
+    color: #3a2d28;
+  }
+}
+
+input {
+  border: 3px solid #e7d7c9;
+}
+input::placeholder {
+  font-family: "Noto Serif TC", serif;
+  font-style: italic;
+  color: #a38f85;
+}

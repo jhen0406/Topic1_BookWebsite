@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>青鳥書屋：:：二手書交換平台</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./main.css" />
+    <link rel="stylesheet" href="./stylesheet/layout/_fistPage.scss">
+</head>
+<body>
+    <div class="top"></div>
+    <div class="title bigArea">
+        <div class="name">
+          <div class="chinese">青鳥書屋</div>
+          <div class="engb">B</div>
+          <div class="english">lue <br>ird <br> ook House</div>
+        </div>
+        <div class="guide">
+            <div class="concept usualtext">
+                Concept
+                <div class="conceptChi hovertext"><a href="#concept" style="display: block;">經營理念</a></div>
+            </div>
+            <div class="line"></div>
+            <div class="rank usualtext">
+                Ranking
+                <div class="rankChi hovertext"><a href="#ranking" style="display: block;">書籍排行</a></div>
+            </div>
+            <div class="line"></div>
+            <div class="personal usualtext">
+                Personal
+                <div class="perChi hovertext"><a href="#ranking" style="display: block;">個人書櫃</a></div>
+            </div>
+            <div class="line"></div>
+            <div class="contact usualtext">
+                Contact us
+                <div class="contactChi hovertext"><a href="#findus" style="display: block;">聯絡我們</a></div>
+            </div>
+        </div>
+    </div>
+    <div class="photo bigArea">
+        <!-- 輪播 -->
+        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel"style="position: relative">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="./stylesheet/layout/你的段落文字.png" class="d-block w-100" alt="Slide 1">
+              </div>
+              <div class="carousel-item">
+                <img src="./stylesheet/layout/2.png" class="d-block w-100" alt="Slide 2">
+              </div>
+              <div class="carousel-item">
+                <img src="./stylesheet/layout/3.png" class="d-block w-100" alt="Slide 3">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+          <!-- 輪播 end -->
+    </div>
+    <div class="news"style="position: absolute; z-index: 20 top: 10px left:30%">
+      <div class="leftsqu">Required</div>
+      <div class="rightsqu">[徵] 東野圭吾 -- 解憂雜貨店</div>
+    </div>
+    <div class="conceptIntro bigArea" id="concept">
+        <div class="squ">
+            <div class="conPho"></div>
+        </div>
+        <div class="conText" id="conText">
+          <div class="lineInCon"></div>
+            <span id="conChi">經營理念</span>
+            <span id="conEng">Business Concepts</span>
+            <span id="conceptContent">希望透過此平台，在閱書人間創造一個善循環，
+                <br>讓書可以被需要，
+                <br>讓閱書人能無邊無際地徜徉在書海裡。</span>
+        </div>
+    </div>
+    <div class="ranking bigArea" id="ranking">
+      <!-- 頁籤 -->
+      <nav style="width: 100%;height: 18%; ">
+        <div class="rankTitle">
+          <a href="./booksPage.html" id="watchmore">watch more ...</a>
+            <div class="hotRanking">
+              <span id="rankChi">熱門排行</span>
+              <br>
+              <span id="rankEng">Ranking</span>
+            </div>
+        <div class="nav nav-tabs" id="nav-tab" role="tablist">
+          <button
+            class="nav-link active"
+            id="nav-home-tab"
+            data-bs-toggle="tab"
+            data-bs-target="#nav-home"
+            type="button"
+            role="tab"
+            aria-controls="nav-home"
+            aria-selected="true"
+            style="height: 30px;width: 316px;border: 0px;"
+            >
+            書籍排行
+          </button>
+          <button
+            class="nav-link"
+            id="nav-profile-tab"
+            data-bs-toggle="tab"
+            data-bs-target="#nav-profile"
+            type="button"
+            role="tab"
+            aria-controls="nav-profile"
+            aria-selected="false"
+            style="height: 30px;width: 316px;border: 0px;"
+            >
+            書櫃排行
+          </button>
+        </div>
+        </nav>
+              <div class="tab-content" id="nav-tabContent">
+                <div
+                  class="tab-pane fade show active"
+                  id="nav-home"
+                  role="tabpanel"
+                  aria-labelledby="nav-home-tab"
+                >
+              <!-- 書籍排行的內容 -->
+        <!-- </div> -->
+        <div class="rankPhoto" id="rankPhoto">
+            <div class="box1 bookSlide">
+                <img src="https://cdn.readmoo.com/cover/fg/8einmi9_460x580.jpg?v=1635911435" alt="">
+                <img src="https://cdn.readmoo.com/cover/d7/dee8j9d_210x315.jpg?v=0" alt="">
+                <img src="https://cdn.readmoo.com/cover/im/fjeepjh_210x315.jpg?v=0" alt="">
+                <img src="https://cdn.readmoo.com/cover/gm/lediocc_210x315.jpg?v=0" alt="">
+                <img src="https://cdn.readmoo.com/cover/a4/gc44ig8_210x315.jpg?v=0" alt="">
+                <img src="https://cdn.readmoo.com/cover/mz/plojtom_210x315.jpg?v=0" alt="">
+                <img src="https://cdn.readmoo.com/cover/a7/g786ibb_210x315.jpg?v=0" alt="">
+            </div>
+        </div>
+                </div>
+        <!-- 個人書櫃的內容 -->
+        <div
+        class="tab-pane fade"
+        id="nav-profile" 
+        role="tabpanel"
+        aria-labelledby="nav-profile-tab">
+            <div class="perPhoto" id="perPhoto">
+                <div class="box1 perSlide">
+                    <img src="https://i.pinimg.com/564x/8c/b0/11/8cb0118657c760012b146fdd7cd2a452.jpg" alt="">
+                    <img src="https://i.pinimg.com/564x/58/bf/b4/58bfb458eb3e54ec0e3e0da667dd4a5f.jpg" alt="">
+                    <img src="https://i.pinimg.com/564x/9b/c8/77/9bc8778304c456f88de3c1cccae5509b.jpg" alt="">
+                    <img src="https://i.pinimg.com/564x/ca/3e/9d/ca3e9d0d9834100f03ebbb23e2fb91e1.jpg" alt="">
+                    <img src="https://i.pinimg.com/564x/db/e1/41/dbe141dd6bbca3ba78e01441ac3d771d.jpg" alt="">
+                    <img src="https://i.pinimg.com/564x/6a/c3/ab/6ac3abce84c3a57765835df41520c573.jpg" alt="">
+                    <img src="https://i.pinimg.com/564x/1b/fe/2e/1bfe2e418eb5be634f067bf322cbc1b4.jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+    <div class="findus bigArea" id="findus">
+        <div class="whiteSqu">
+            <div class="findusText">
+                <div class="findusTitle">Contact us</div>
+                <div class="findusContent">
+                    <div class="data">Phone：06-1234567 <br>Address：711台南市歸仁區歸仁十三路一段6號六樓</div>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3674.74747895406!2d120.28694507350374!3d22.922683120051857!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x346e73ac9ccc200f%3A0xec77f68341e67b59!2zVFRB5Y2X6YOo5pOa6bue!5e0!3m2!1szh-TW!2stw!4v1714576236450!5m2!1szh-TW!2stw" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+            <div class="middleLine"></div>
+            <div class="findusInput">
+                <input type="name" id="name" placeholder="姓名：">
+                <input type="text" id="number" placeholder="電話：">
+                <input type="text" id="text" placeholder="請描述您的問題或建議，我們會盡速派專人為您服務">
+                <button type="submit" id="submit">SUBMIT</button>
+              </div>
+        </div>
+        
+    </div>
+    <div class="footer"></div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+</body>
+</html>
